@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>SignUpForm</title>
+</head>
+<body>
+    <div class="SignUpForm">
+    <div class="image-section">
+        <div class="banner">
+            <img src="Images/Lavender Fields-logos_transparent.png" alt="yellowish flower with the words lavender fields next to it">
+            
+        </div>
+    </div>
+    <div id="top_container">
+        <p>
+            Welcome to Lavender Fields, a place to connect with other gardening enthusiasts! Please create an account below or if you already have an account sign in.
+        </p>
+    </div>
+    <div id="middle_container">
+      <form id="signup_form">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="ex: Bob">
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="ex: Addams">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="youremailhere@gmail.com">
+        <label for="phone_number">Phone Number</label>
+        <input type="tel" id="phone_number" name="phone_number" placeholder="000-000-0000">
+        <label for="user_password">Password </label>
+        <input type="password" id="user_password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" id="confirm_password" name="user_confirm_password">
+
+        
+      </form>
+    </div>
+
+    <div id="bottom_container">
+        <button type="submit">Create Account</button>
+        <span>Already have an account?</span>
+        <a href="">Log In</a>
+    </div>
+</div>
+</body>
+</html>
